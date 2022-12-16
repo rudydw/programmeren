@@ -50,9 +50,10 @@ public class Wachtrij {
          while (it.hasNext()) {
              Map.Entry pair = (Map.Entry) it.next();
              System.out.println(pair.getKey() + " = " + pair.getValue());
-             if (pair.getValue().equals(Toestand.BEDIEND.name())) {
+             if (pair.getValue().equals(Toestand.BEDIEND)) {
                  it.remove();
              }
          }
      }
+
 }
